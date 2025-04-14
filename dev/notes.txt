@@ -1,0 +1,3 @@
+- fix errors
+	- Could not find file 'C:\Users\ADMIN\AppData\Local\Temp\dotnet-script\C\edward\apps\datapod-for-react-csharp-json\scripts\commands\net8.0\obj\script.csproj.nuget.g.props'.
+		- rmdir /s /q "C:\Users\ADMIN\AppData\Local\Temp\dotnet-script"
