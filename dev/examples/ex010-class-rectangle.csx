@@ -15,5 +15,5 @@ class Rectangle
 	}
 }
 
-var rect = new Rectangle(5.0, 3.2);
-Console.WriteLine($"Area of rectangle: {rect.GetArea()}");
+var rect = new Rectangle(5.6, 3.1);
+Console.WriteLine($"Area of rectangle: {rect.GetArea():F2}");
