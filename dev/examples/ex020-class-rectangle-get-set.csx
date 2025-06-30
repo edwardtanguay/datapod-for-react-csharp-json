@@ -25,6 +25,8 @@ class Rectangle
 		}
 	}
 
+	public string IdCode {get; set;} = Guid.NewGuid().ToString();
+
 	public Rectangle(double length, double width)
 	{
 		this.Length = length;
@@ -37,13 +39,15 @@ class Rectangle
 	}
 }
 
-var h = -5.6;
+var h = 5.6;
 var l = 3.1;
 
 try 
 {
 	var rect = new Rectangle(h, l);
+	rect.IdCode = "Rect-001"; // Example of setting the IdCode property
 	Console.WriteLine($"Area of rectangle: {rect.GetArea():F2}");
+	Console.WriteLine($"Rectangle ID: {rect.IdCode}");
 }
 catch (ArgumentException ex)
 {
